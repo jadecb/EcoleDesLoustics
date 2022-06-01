@@ -37,7 +37,7 @@ public class DatabaseClient {
         return instance;
     }
 
-    // Retourne l'objet représentant la base de données de votre application
+    // Retourne l'objet représentant la base de données de  l'application
     public AppDatabase getAppDatabase() {
         return appDatabase;
     }
