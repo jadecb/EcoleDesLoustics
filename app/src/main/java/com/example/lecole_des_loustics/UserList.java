@@ -19,7 +19,7 @@ import com.example.lecole_des_loustics.db.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListUser extends AppCompatActivity {
+public class UserList extends AppCompatActivity {
 
     //Data
     private DatabaseClient mDb;
@@ -53,7 +53,7 @@ public class ListUser extends AppCompatActivity {
 
 
                 // Message
-                Toast.makeText(ListUser.this, "Click : " + user.getNom(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserList.this, "Click : " + user.getNom(), Toast.LENGTH_SHORT).show();
             }
         });
 

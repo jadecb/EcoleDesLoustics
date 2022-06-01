@@ -5,44 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainMenu">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nom_appli"
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:textSize="25dp"
-        android:id="@+id/textAccueil"/>
+        android:id="@+id/main_menu_header"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:onClick="signIn"
-        android:text="@string/accueil_connexion" />
+        android:onClick="subjectChoice"
+        android:text="@string/main_menu_subject" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:onClick="signUp"
-        android:text="@string/accueil_creer_compte" />
+        android:onClick="trophies"
+        android:text="@string/main_menu_trophies" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:onClick="exercicesInvite"
-        android:text="@string/accueil_invite" />
+        android:onClick="options"
+        android:text="@string/main_menu_options" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/accueil_liste_comptes"
-        android:onClick="userList"
         android:layout_gravity="center"
-        />
+        android:onClick="logOut"
+        android:text="@string/main_menu_logout" />
 
 </LinearLayout>

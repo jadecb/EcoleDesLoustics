@@ -10,6 +10,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LEcole_Des_Loustics">
+        <activity
+            android:name=".SubjectList"
+            android:exported="true" />
+        <activity
+            android:name=".Achievements"
+            android:exported="true" />
+        <activity
+            android:name=".Options"
+            android:exported="true" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".SignIn"
+            android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +43,7 @@
         <activity android:name=".ResultatMultActivity" />
         <activity android:name=".db.SaveUser" />
         <activity android:name=".ListUser" />
-        <activity android:name=".GeographieActivity"></activity>
+        <activity android:name=".GeographieActivity" />
         <activity android:name=".ResultatGeoActivity" />
     </application>
 

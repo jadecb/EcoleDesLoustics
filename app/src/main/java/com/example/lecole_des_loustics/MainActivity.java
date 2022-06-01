@@ -16,18 +16,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void exoMaths(View view){
-        Intent intent = new Intent(this, ExoMathsActivity.class);
+    public void signIn(View view) {
+        Intent intent = new Intent(this, SignIn.class);
         startActivity(intent);
     }
 
-    public void creaUser(View view){
-        Intent intent = new Intent(this, SaveUser.class);
+    public void signUp(View view) {
+        Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
 
-    public void listerUser(View view){
-        Intent intent = new Intent(this, ListUser.class);
+    public void exercicesInvite(View view) {
+        String username = "cher invité";
+        Intent intent = new Intent(this, MainMenu.class);
+        intent.putExtra(MainMenu.USERNAME, username);
+        startActivity(intent);
+    }
+
+    public void userList(View view){
+        Intent intent = new Intent(this, UserList.class);
         startActivity(intent);
     }
 }

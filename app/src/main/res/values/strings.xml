@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">L\'Ecole_Des_Loustics</string>
+    <string name="nom_appli">L\'Ecole des Loustics</string>
+
+    <!-- Accueil -->
+    <string name="accueil_invite">Jouer en tant qu\'invité</string>
+    <string name="accueil_creer_compte">Créer un compte</string>
+    <string name="accueil_liste_comptes">Liste des utilisateurs</string>
+    <string name="accueil_connexion">Se connecter</string>
+
+    <!-- Menu Principal -->
+    <string name="main_menu_subject">Exercices</string>
+    <string name="main_menu_trophies">Trophées</string>
+    <string name="main_menu_options">Options</string>
+    <string name="main_menu_logout">Déconnexion</string>
+
 </resources>
