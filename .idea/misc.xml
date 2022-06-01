@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jade/Documents/CoursDUTAS/S2/AndroidM4104C/L_Ecole_Des_Loustics-master/app/src/main/res/layout/activity_addition.xml" value="0.1" />
         <entry key="..\:/Users/jade/Documents/CoursDUTAS/S2/AndroidM4104C/L_Ecole_Des_Loustics-master/app/src/main/res/layout/activity_mult.xml" value="0.1" />
+        <entry key="..\:/Users/jade/Documents/CoursDUTAS/S2/AndroidM4104C/L_Ecole_Des_Loustics-master/app/src/main/res/layout/choix_exo_activity.xml" value="0.1" />
       </map>
     </option>
   </component>
