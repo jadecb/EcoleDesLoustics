@@ -14,4 +14,11 @@
     <string name="main_menu_options">Options</string>
     <string name="main_menu_logout">Déconnexion</string>
 
+    <!-- Choix matière -->
+    <string name="subjects_header">Choisis une matière</string>
+    <string name="subjects_maths">Mathématiques</string>
+    <string name="subjects_french">Français</string>
+    <string name="subjects_history">Histoire</string>
+    <string name="subjects_geography">Géoraphie</string>
+
 </resources>
