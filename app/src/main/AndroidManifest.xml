@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lecole_des_loustics">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LEcole_Des_Loustics">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MultActivity" />
+        <activity android:name=".TableMult" />
+        <activity android:name=".ExoMathsActivity" />
+        <activity android:name=".AdditionActivity" />
+        <activity android:name=".ResultatAdditionActivity" />
+        <activity android:name=".ResultatMultActivity" />
+        <activity android:name=".db.SaveUser" />
+        <activity android:name=".ListUser" />
+        <activity android:name=".GeographieActivity"></activity>
+        <activity android:name=".ResultatGeoActivity" />
+    </application>
+
+</manifest>
