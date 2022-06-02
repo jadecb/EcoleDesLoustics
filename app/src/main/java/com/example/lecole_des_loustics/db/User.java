@@ -6,44 +6,25 @@ import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
-@Entity
+@Entity(primaryKeys = {"firstName", "lastName"})
 public class User implements Serializable {
 
-    @PrimaryKey(autoGenerate = true)
-    private int id;
+    @ColumnInfo(name = "fisrtName")
+    private String firstName;
 
-    @ColumnInfo(name = "Nom")
-    private String nom;
-
-    @ColumnInfo(name = "Prenom")
-    private String prenom;
+    @ColumnInfo(name = "lastName")
+    private String lastName;
 
 
-    /*
-     * Getters and Setters
-     * */
-    public String getNom() {
-        return nom;
+    /* Getters and Setters */
+
+    public String getFirstName() { return firstName; }
+
+    public String getLastName() { return lastName; }
+
+    public void setFisrtName(String userFirstName) { this.firstName = userFirstName; }
+
+    public void setLastName(String userLastName) {
+        this.lastName = userLastName;
     }
-
-    public String getPrenom() {
-        return prenom;
-    }
-
-    public void setNom(String nomUser) {
-        this.nom = nomUser;
-    }
-
-    public void setPrenom(String prenomUser) {
-        this.prenom = prenomUser;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int Newid) {
-        this.id = Newid;
-    }
-
 }

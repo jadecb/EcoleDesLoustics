@@ -8,6 +8,6 @@ public abstract class AppDatabase extends RoomDatabase {
 
     public abstract UserDAO userDao();
 
-    public abstract  GeographieDAO geographieDAO();
+    public abstract  QuestionDAO questionDAO();
 
 }
