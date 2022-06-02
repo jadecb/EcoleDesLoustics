@@ -26,11 +26,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void exercicesInvite(View view) {
+    public void guestLogIn(View view) {
         String username = "cher invité";
         Intent intent = new Intent(this, MainMenu.class);
         intent.putExtra(MainMenu.USERNAME, username);
         startActivity(intent);
+        finish();
     }
 
     public void userList(View view){

@@ -3,6 +3,7 @@ package com.example.lecole_des_loustics;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 public class SignIn extends AppCompatActivity {
 
@@ -10,5 +11,8 @@ public class SignIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+    }
+
+    public void signIn(View view) {
     }
 }

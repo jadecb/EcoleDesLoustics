@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nom_appli"
+        android:text="@string/app_name"
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:textSize="25dp"
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:onClick="exercicesInvite"
+        android:onClick="guestLogIn"
         android:text="@string/accueil_invite" />
 
     <Button

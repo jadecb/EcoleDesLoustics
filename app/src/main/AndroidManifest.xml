@@ -42,7 +42,7 @@
         <activity android:name=".ResultatAdditionActivity" />
         <activity android:name=".ResultatMultActivity" />
         <activity android:name=".db.SaveUser" />
-        <activity android:name=".ListUser" />
+        <activity android:name=".UserList" />
         <activity android:name=".GeographieActivity" />
         <activity android:name=".ResultatGeoActivity" />
     </application>
