@@ -15,7 +15,7 @@
     <string name="sign_up_action">Inscription</string>
 
     <string name="sign_first_name">Prénom</string>
-    <string name="sign_family_name">Nom</string>
+    <string name="sign_last_name">Nom</string>
 
     <!-- Menu Principal -->
     <string name="main_menu_subject">Exercices</string>

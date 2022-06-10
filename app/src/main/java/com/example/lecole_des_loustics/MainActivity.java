@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import com.example.lecole_des_loustics.ExoMathsActivity;
-import com.example.lecole_des_loustics.db.SaveUser;
 
 public class MainActivity extends AppCompatActivity {
 

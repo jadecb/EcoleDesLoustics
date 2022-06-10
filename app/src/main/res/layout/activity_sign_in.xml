@@ -26,8 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="@string/sign_family_name"
-        android:id="@+id/sign_in_family_name" />
+        android:hint="@string/sign_last_name"
+        android:id="@+id/sign_in_last_name" />
 
     <Button
         android:layout_width="match_parent"

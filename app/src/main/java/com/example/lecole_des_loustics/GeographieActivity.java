@@ -15,8 +15,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.example.lecole_des_loustics.modele.CultureGenerale;
-
 
 public class GeographieActivity extends AppCompatActivity {
 

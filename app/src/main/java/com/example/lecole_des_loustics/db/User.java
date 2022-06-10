@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Entity(primaryKeys = {"firstName", "lastName"})
 public class User implements Serializable {
 
-    @ColumnInfo(name = "fisrtName")
+    @ColumnInfo(name = "firstName")
     private String firstName;
 
     @ColumnInfo(name = "lastName")
@@ -22,7 +22,7 @@ public class User implements Serializable {
 
     public String getLastName() { return lastName; }
 
-    public void setFisrtName(String userFirstName) { this.firstName = userFirstName; }
+    public void setFirstName(String userFirstName) { this.firstName = userFirstName; }
 
     public void setLastName(String userLastName) {
         this.lastName = userLastName;
