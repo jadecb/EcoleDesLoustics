@@ -20,12 +20,12 @@ public class DatabaseClient {
 
         // Créer l'objet représentant la base de données de votre application
         // à l'aide du "Room database builder"
-        // MyToDos est le nom de la base de données
+        // EcoleDesLoustics est le nom de la base de données
         appDatabase = Room.databaseBuilder(context, AppDatabase.class, "EcoleDesLoustics").addCallback(roomDatabaseCallback).build();
 
         ////////// REMPLIR LA BD à la première création à l'aide de l'objet roomDatabaseCallback
         // Ajout de la méthode addCallback permettant de populate (remplir) la base de données à sa création
-        //appDatabase = Room.databaseBuilder(context, AppDatabase.class, "EcoleDesLoustics").addCallback(roomDatabaseCallback).build();
+        appDatabase = Room.databaseBuilder(context, AppDatabase.class, "EcoleDesLoustics").addCallback(roomDatabaseCallback).build();
     }
 
     // Méthode statique
@@ -50,9 +50,24 @@ public class DatabaseClient {
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
 
-            //db.execSQL("INSERT INTO QuestGeo (id, Intitule, BonneReponse) VALUES(\" 1\", \"Capitale France ?\",\"Paris\" );");
-            //db.execSQL("INSERT INTO QuestGeo (id, Intitule, BonneReponse) VALUES(\" 2\", \"Capitale UK ?\",\"Londres\" );");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"Invité\", \"\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"Clémence\", \"Linard\");");
 
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"addition\", \"arithmetics\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"substraction\", \"arithmetics\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"multiplication\", \"arithmetics\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"division\", \"arithmetics\")");
+
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"conjugaison\", \"fillIn\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"orthgraph\", \"pick\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"grammar\", \"pick\")");
+
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"history\", \"antiquity\", \"pick\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"history\", \"middle-ages\", \"pick\")");
+
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"regions\", \"pick\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"countries\", \"fillIn\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"capitals\", \"pick\")");
         }
     };
 }

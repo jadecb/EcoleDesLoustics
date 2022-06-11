@@ -3,15 +3,25 @@ package com.example.lecole_des_loustics;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.lecole_des_loustics.db.DatabaseClient;
+import com.example.lecole_des_loustics.db.User;
+
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+
+    private DatabaseClient db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        db = DatabaseClient.getInstance(getApplicationContext());
     }
 
     public void signIn(View view) {
@@ -25,9 +35,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void guestLogIn(View view) {
-        String username = "cher invité";
+        ((MyApplication) this.getApplication()).setFirstName("Invité");
+        ((MyApplication) this.getApplication()).setLastName("");
+
         Intent intent = new Intent(this, MainMenu.class);
-        intent.putExtra(MainMenu.USERNAME, username);
         startActivity(intent);
         finish();
     }

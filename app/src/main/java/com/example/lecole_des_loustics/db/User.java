@@ -1,13 +1,17 @@
 package com.example.lecole_des_loustics.db;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
-@Entity(primaryKeys = {"firstName", "lastName"})
+@Entity
 public class User implements Serializable {
+
+    @PrimaryKey(autoGenerate = true)
+    private int userId;
 
     @ColumnInfo(name = "firstName")
     private String firstName;
@@ -18,13 +22,17 @@ public class User implements Serializable {
 
     /* Getters and Setters */
 
+    public int getUserId() { return userId; }
+
     public String getFirstName() { return firstName; }
 
     public String getLastName() { return lastName; }
 
-    public void setFirstName(String userFirstName) { this.firstName = userFirstName; }
+    public void setUserId(int userId) { this.userId = userId; }
 
-    public void setLastName(String userLastName) {
-        this.lastName = userLastName;
+    public void setFirstName(String firstName) { this.firstName = firstName; }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }

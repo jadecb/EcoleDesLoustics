@@ -1,38 +1,27 @@
 package com.example.lecole_des_loustics;
 
 import android.app.Application;
+import com.example.lecole_des_loustics.db.User;
 
 public class MyApplication extends Application {
 
-    private String nom;
-    private String prenom;
-    private int scoreMult;
-    private int scoreAdd;
+    private String firstName;
+    private String lastName;
 
-    //Getters
-    public String getNom() {
-        return nom;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getPrenom() {
-        return prenom;
+    public String getLastName() {
+        return lastName;
     }
 
-    public int getScoreAdd() { return scoreAdd; }
-
-    public int getScoreMult() { return scoreMult; }
-
-    //Setters
-
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public void setScoreAdd(int scoreAdd) { this.scoreAdd = scoreAdd; }
-
-    public void setScoreMult(int scoreMult) { this.scoreMult = scoreMult; }
 }

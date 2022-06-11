@@ -22,6 +22,7 @@
     <string name="main_menu_trophies">Trophées</string>
     <string name="main_menu_options">Options</string>
     <string name="main_menu_logout">Déconnexion</string>
+    <string name="main_menu_hello">Bienvenue</string>
 
     <!-- Choix matière -->
     <string name="subjects_header">Choisis une matière</string>

@@ -14,6 +14,12 @@ public interface UserDAO {
     @Query("SELECT * FROM user ORDER BY lastName, firstName")
     List<User> getAll();
 
+    @Query("SELECT * FROM user WHERE firstName LIKE :first AND " + "lastName LIKE :last LIMIT 1")
+    User getUserByName(String first, String last);
+
+    @Query("SELECT * FROM user WHERE userID=:id")
+    User getUserById(int id);
+
     @Insert
     void insert(User user);
 

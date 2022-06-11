@@ -60,7 +60,9 @@ public class SignUp extends AppCompatActivity {
                 user.setLastName(lastName);
 
                 // Ajout à la base de données
-                db.getAppDatabase().userDao().insert(user);
+                db.getAppDatabase()
+                        .userDao()
+                        .insert(user);
 
                 return user;
             }
@@ -69,11 +71,9 @@ public class SignUp extends AppCompatActivity {
             protected void onPostExecute(User user) {
                 super.onPostExecute(user);
 
-                // Après création de l'utilisateur, fin de l'activité et redirection vers le menu principal
-                Intent intent = new Intent(getApplicationContext(), MainMenu.class);
-                startActivity(intent);
+                setResult(RESULT_OK);
                 finish();
-                Toast.makeText(getApplicationContext(), "Inscription faite !", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Prodil créé !", Toast.LENGTH_LONG);
             }
         }
 

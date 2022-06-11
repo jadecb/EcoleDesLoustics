@@ -11,13 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LEcole_Des_Loustics">
         <activity
+            android:name=".ExerciceList"
+            android:exported="false" />
+        <activity
             android:name=".SubjectList"
             android:exported="true" />
         <activity
             android:name=".Achievements"
-            android:exported="true" />
-        <activity
-            android:name=".Options"
             android:exported="true" />
         <activity
             android:name=".MainMenu"
@@ -35,15 +35,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MultActivity" />
-        <activity android:name=".TableMult" />
-        <activity android:name=".ExoMathsActivity" />
-        <activity android:name=".AdditionActivity" />
-        <activity android:name=".ResultatAdditionActivity" />
-        <activity android:name=".ResultatMultActivity" />
         <activity android:name=".UserList" />
-        <activity android:name=".GeographieActivity" />
-        <activity android:name=".ResultatGeoActivity" />
     </application>
 
 </manifest>

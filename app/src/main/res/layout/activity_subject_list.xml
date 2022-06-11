@@ -19,24 +19,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/subjects_maths" />
+        android:text="@string/subjects_maths"
+        android:onClick="maths"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/subjects_french" />
+        android:text="@string/subjects_french"
+        android:onClick="french"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/subjects_history" />
+        android:text="@string/subjects_history"
+        android:onClick="history"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/subjects_geography" />
+        android:text="@string/subjects_geography"
+        android:onClick="geography"/>
 
 </LinearLayout>
