@@ -60,7 +60,7 @@ public class DatabaseClient {
             db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"Division\", \"arithmetics\")");
 
             db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"Conjugaison\", \"fillIn\")");
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"Orthgraphe\", \"pick\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"Orthographe\", \"pick\")");
             db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"Grammaire\", \"pick\")");
 
             db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"history\", \"Antiquité\", \"pick\")");
@@ -71,37 +71,37 @@ public class DatabaseClient {
             db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"Capitales\", \"pick\")");
 
 
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, 1, \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, 2, \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, 3, \"\", \"\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, 1, \"Manger - passé composé - 1ère personne du singulier\", \"J'ai mangé\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, 2, \"Aller - présent - 2ème personne du pluriel\", \"Vous allez\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, 3, \"Fermer - futur - 3ème personne du singulier\", \"Il fermera\")");
 
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, 1, \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, 2, \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, 3, \"\", \"\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, 1, \"De quel pays s'agit-il ?\", \"France\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, 2, \"De quel pays s'agit-il ?\", \"Italie\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, 3, \"De quel pays s'agit-il ?\", \"Pologne\")");
 
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (6, 1, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (6, 2, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (6, 3, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (6, 1, \"Quelle est la bonne orthographe ?\", \"Règle\", \"Raigle\", \"Régle\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (6, 2, \"Quelle est la bonne orthographe ?\", \"Eléphant\", \"Elefant\", \"Eléphent\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (6, 3, \"Quelle est la bonne orthographe ?\", \"Grammaire\", \"Gramaire\", \"Grammeire\")");
 
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (7, 1, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (7, 2, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (7, 3, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (7, 1, \"Quelle est la fontion de 'son terrier' dans 'Le lapin est sorti de son terrier' ?\", \"COI\", \"COD\", \"Sujet\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (7, 2, \"Quelle est la fontion de 'sa voiture' dans 'Marie conduit sa voiture' ?\", \"COD\", \"COI\", \"Sujet\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (7, 3, \"Quelle est la fontion de 'Lucas' dans 'Lucas joue au tennis' ?\", \"Sujet\", \"COI\", \"COD\")");
 
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (8, 1, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (8, 2, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (8, 3, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (8, 1, \"Quel général romain a conquis la Gaule ?\", \"Jules César\", \"Scipion l'Africain\", \"Pompée\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (8, 2, \"Chez quelle culture trouvait-on des druides ?\", \"Gaulois\", \"Han\", \"Grecs\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (8, 3, \"Lequel de ces dieux les romains ne vénéraient-ils pas ?\", \"Cernunnos\", \"Jupiter\", \"Mars\")");
 
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 1, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 2, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 3, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 1, \"De qui Clovis était-il le rois ?\", \"Les Francs\", \"Les Français\", \"Les Goths\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 2, \"Quel élément défensif encercle les châteaux-forts ?\", \"Les douves\", \"Les meurtrières\", \"Le donjon\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 3, \"Au cours de quelle cérémonie le titre de chevalier est-il conféré ?\", \"L'adoubement\", \"La messe\", \"Les moissons\")");
 
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (10, 1, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (10, 2, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (10, 3, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (10, 1, \"Quelle région se trouve au sud de la Bourgogne-Franche-Comté?\", \"Auvergne-Rhône-Alpes\", \"Centre-Val de Loire\", \"Grand Est\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (10, 2, \"Quelle région borde à la fois l'Océan Atlantique et l'Espagne ?\", \"Nouvelle-Aquitaine\", \"Hauts-de-France\", \"Corse\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (10, 3, \"De quelle région sont originaires les calissons ?\", \"Provence-Alpes-Côte d'Azur\", \"Île-de-France\", \"Bretagne\")");
 
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (12, 1, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (12, 2, \"\", \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (12, 3, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (12, 1, \"Quelle est la capitale de Chypre ?\", \"Nicosie\", \"Rome\", \"Londres\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (12, 2, \"Quelle est la capitale de l'Allemagne ?\", \"Berlin\", \"Dublin\", \"Lisbonne\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (12, 3, \"Quelle est la capitale de l'Estonie ?\", \"Tallinn\", \"Belgrade\", \"Varsovie\")");
         }
     };
 }

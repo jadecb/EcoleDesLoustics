@@ -36,7 +36,7 @@ public class Exercice implements Serializable {
 
     public void setSubject(String subject) { this.subject= subject; }
 
-    public void setExerciceName(String exerciceName) { exerciceName = exerciceName; }
+    public void setExerciceName(String exerciceName) { this.exerciceName = exerciceName; }
 
     public void setType(String type) { this.type = type; }
 }
