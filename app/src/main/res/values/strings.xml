@@ -30,5 +30,6 @@
     <string name="subjects_french">Français</string>
     <string name="subjects_history">Histoire</string>
     <string name="subjects_geography">Géoraphie</string>
+    <string name="exercices_header">Choisis un exercice</string>
 
 </resources>
