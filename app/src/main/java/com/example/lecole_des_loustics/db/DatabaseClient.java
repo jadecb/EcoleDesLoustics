@@ -53,6 +53,7 @@ public class DatabaseClient {
             db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"Invité\", \"\");");
             db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"Clémence\", \"Linard\");");
 
+
             db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"addition\", \"arithmetics\")");
             db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"substraction\", \"arithmetics\")");
             db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"multiplication\", \"arithmetics\")");
@@ -69,37 +70,38 @@ public class DatabaseClient {
             db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"countries\", \"fillIn\")");
             db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"capitals\", \"pick\")");
 
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, \"\", \"\", \"\")");
 
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(6, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(6, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(6, \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, 1, \"\", \"\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, 2, \"\", \"\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, 3, \"\", \"\")");
 
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(7, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(7, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(7, \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, 1, \"\", \"\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, 2, \"\", \"\")");
+            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, 3, \"\", \"\")");
 
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(8, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(8, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(8, \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (6, 1, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (6, 2, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (6, 3, \"\", \"\", \"\", \"\")");
 
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(9, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(9, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(9, \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (7, 1, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (7, 2, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (7, 3, \"\", \"\", \"\", \"\")");
 
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(10, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(10, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(10, \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (8, 1, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (8, 2, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (8, 3, \"\", \"\", \"\", \"\")");
 
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(11, \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 1, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 2, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 3, \"\", \"\", \"\", \"\")");
 
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(12, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(12, \"\", \"\", \"\")");
-            db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(12, \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (10, 1, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (10, 2, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (10, 3, \"\", \"\", \"\", \"\")");
+
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (12, 1, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (12, 2, \"\", \"\", \"\", \"\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (12, 3, \"\", \"\", \"\", \"\")");
         }
     };
 }
