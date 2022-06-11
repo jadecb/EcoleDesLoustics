@@ -33,7 +33,7 @@ public class QPick implements Serializable {
 
     /* Getters and Setters */
 
-    public int getqPickId() { return qPickId; }
+    public int getQPickId() { return qPickId; }
 
     public int getExercice() { return exercice; }
 
@@ -47,7 +47,7 @@ public class QPick implements Serializable {
 
     public String getWrongAnswer2() { return wrongAnswer2; }
 
-    public void setqPickId(int qPickId) { this.qPickId = qPickId; }
+    public void setQPickId(int qPickId) { this.qPickId = qPickId; }
 
     public void setExercice(int exercice) { this.exercice = exercice; }
 

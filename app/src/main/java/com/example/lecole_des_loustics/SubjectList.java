@@ -17,20 +17,24 @@ public class SubjectList extends AppCompatActivity {
     public void maths(View view) {
         Intent intent = new Intent(this, ExerciceList.class);
         intent.putExtra(ExerciceList.SUBJECT, "maths");
+        startActivity(intent);
     }
 
     public void french(View view) {
         Intent intent = new Intent(this, ExerciceList.class);
         intent.putExtra(ExerciceList.SUBJECT, "french");
+        startActivity(intent);
     }
 
     public void history(View view) {
         Intent intent = new Intent(this, ExerciceList.class);
         intent.putExtra(ExerciceList.SUBJECT, "history");
+        startActivity(intent);
     }
 
     public void geography(View view) {
         Intent intent = new Intent(this, ExerciceList.class);
         intent.putExtra(ExerciceList.SUBJECT, "geography");
+        startActivity(intent);
     }
 }

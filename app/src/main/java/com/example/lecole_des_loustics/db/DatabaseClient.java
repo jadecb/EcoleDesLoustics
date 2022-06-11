@@ -54,21 +54,21 @@ public class DatabaseClient {
             db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"Clémence\", \"Linard\");");
 
 
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"addition\", \"arithmetics\")");
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"substraction\", \"arithmetics\")");
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"multiplication\", \"arithmetics\")");
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"division\", \"arithmetics\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"Addition\", \"arithmetics\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"Soustraction\", \"arithmetics\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"Multiplication\", \"arithmetics\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"Division\", \"arithmetics\")");
 
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"conjugaison\", \"fillIn\")");
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"orthgraph\", \"pick\")");
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"grammar\", \"pick\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"Conjugaison\", \"fillIn\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"Orthgraphe\", \"pick\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"french\", \"Grammaire\", \"pick\")");
 
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"history\", \"antiquity\", \"pick\")");
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"history\", \"middle-ages\", \"pick\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"history\", \"Antiquité\", \"pick\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"history\", \"Moyen-Âge\", \"pick\")");
 
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"regions\", \"pick\")");
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"countries\", \"fillIn\")");
-            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"capitals\", \"pick\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"Régions\", \"pick\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"Pays\", \"fillIn\")");
+            db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"geography\", \"Capitales\", \"pick\")");
 
 
             db.execSQL("INSERT INTO qfillin (exercice, numQuestion, statement, answer) VALUES(5, 1, \"\", \"\")");
