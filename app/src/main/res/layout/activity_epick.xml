@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".EPick">
+
+<TextView
+    android:id="@+id/fillInExerciceName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_200"
+    android:layout_margin="10sp"
+    android:padding="10sp"
+    android:textSize="20sp"
+    />
+
+<TextView
+    android:id="@+id/fillIntStatement"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20sp"
+    android:textSize="15sp"/>
+
+<Button
+    android:id="@+id/fillInButton1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="rightAnswer" />
+
+<Button
+    android:id="@+id/fillInButton2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="wrongAnswer" />
+
+<Button
+    android:id="@+id/fillInButton3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="wrongAnswer" />
+
+</LinearLayout>

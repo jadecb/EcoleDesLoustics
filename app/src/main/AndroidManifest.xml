@@ -11,6 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LEcole_Des_Loustics">
         <activity
+            android:name=".EArithmatics"
+            android:exported="false" />
+        <activity
+            android:name=".EPick"
+            android:exported="false" />
+        <activity
+            android:name=".EFillIn"
+            android:exported="false" />
+        <activity
             android:name=".ExerciceList"
             android:exported="false" />
         <activity

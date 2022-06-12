@@ -52,6 +52,19 @@ public class DatabaseClient {
 
             db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"Invité\", \"\");");
             db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"Clémence\", \"Linard\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomA\", \"NomA\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomB\", \"NomB\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomC\", \"NomC\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomD\", \"NomD\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomE\", \"NomE\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomF\", \"NomF\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomG\", \"NomG\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomH\", \"NomH\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomI\", \"NomI\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomJ\", \"NomJ\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomK\", \"NomK\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomL\", \"NomL\");");
+            db.execSQL("INSERT INTO user (firstName, lastName) VALUES(\"PrénomM\", \"NomM\");");
 
 
             db.execSQL("INSERT INTO exercice (subject, exerciceName, type) VALUES(\"maths\", \"Addition\", \"arithmetics\")");
