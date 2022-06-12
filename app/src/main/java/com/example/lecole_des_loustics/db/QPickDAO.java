@@ -14,6 +14,9 @@ public interface QPickDAO {
     @Query("SELECT * FROM qpick WHERE exercice LIKE :exercice AND " + "numQuestion LIKE :question")
     QPick getquestion(int exercice, int question);
 
+    @Query("SELECT count(*) FROM qpick WHERE exercice LIKE :exercice")
+    int getCountQuestions(int exercice);
+
     @Insert
     void insert(QPick qPick);
 

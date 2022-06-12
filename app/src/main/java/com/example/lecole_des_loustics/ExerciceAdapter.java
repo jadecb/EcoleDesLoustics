@@ -67,6 +67,7 @@ public class ExerciceAdapter extends ArrayAdapter<Exercice> {
                         intentP.putExtra(EPick.NAME, exercice.getExerciceName());
                         intentP.putExtra(EPick.ID, exercice.getExerciceId());
                         intentP.putExtra(EPick.QUESTION, "1");
+                        intentP.putExtra(EPick.POINTS, "0");
                         getContext().startActivity(intentP);
                         break;
                 }

@@ -104,7 +104,7 @@ public class DatabaseClient {
             db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (8, 2, \"Chez quelle culture trouvait-on des druides ?\", \"Gaulois\", \"Han\", \"Grecs\")");
             db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (8, 3, \"Lequel de ces dieux les romains ne vénéraient-ils pas ?\", \"Cernunnos\", \"Jupiter\", \"Mars\")");
 
-            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 1, \"De qui Clovis était-il le rois ?\", \"Les Francs\", \"Les Français\", \"Les Goths\")");
+            db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 1, \"De qui Clovis était-il le roi ?\", \"Les Francs\", \"Les Français\", \"Les Goths\")");
             db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 2, \"Quel élément défensif encercle les châteaux-forts ?\", \"Les douves\", \"Les meurtrières\", \"Le donjon\")");
             db.execSQL("INSERT INTO qpick (exercice, numQuestion, statement, rightAnswer, wrongAnswer1, wrongAnswer2) VALUES (9, 3, \"Au cours de quelle cérémonie le titre de chevalier est-il conféré ?\", \"L'adoubement\", \"La messe\", \"Les moissons\")");
 
